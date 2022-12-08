@@ -7,23 +7,18 @@ const styles = StyleSheet.create({
         fontSize: 24,
         fontWeight: 'bold',
     },
-    pressableStyle: {
-        flexDirection: 'row',
-        justifyContent: 'space-between',
+    itemStyle: {
         alignItems: 'center',
-        marginVertical: 50,
         borderWidth: 2,
         borderColor: 'gray',
         borderRadius: 10,
-        paddingVertical: 50,
+        paddingVertical: 20,
         paddingHorizontal: 20,
-    },
-    colorsContainer: {
-        flexDirection: 'row',
     },
     textStyle: {
         fontWeight: 'bold',
         fontSize: 18,
+        marginBottom: 10,
     },
     colorItem: {
         width: 30,

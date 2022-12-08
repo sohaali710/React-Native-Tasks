@@ -1,6 +1,6 @@
 import { View, Text, Pressable } from 'react-native'
 import React from 'react'
-import styles from './style'
+import styles from '../style'
 import routes from '../../common/routes'
 import { useNavigation } from '@react-navigation/native'
 import { solarizedColors, twitterColors } from '../../common/colors'
@@ -26,7 +26,7 @@ const Home = () => {
                 schemeList.map(({ id, scheme, title }) => (
                     <Pressable onPress={() => navigate(routes.palette, { colorPalette: scheme, name: title })}
                         key={id}
-                        style={styles.pressableStyle}
+                        style={styles.itemStyle}
                     >
                         <Text style={styles.textStyle}>{title}</Text>
                         <View style={styles.colorsContainer}>

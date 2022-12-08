@@ -1,15 +1,15 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack"
 import { View } from "react-native"
 import routes from "../common/routes"
-import UserDetails from "../screens/UserDetails"
-import Users from "../screens/Users"
+import Home from "../screens/Home"
+import Palette from "../screens/Palette"
 
 const Stack = createNativeStackNavigator()
 
 export default function Root() {
     return <Stack.Navigator>
-        <Stack.Screen name={routes.users} component={Users} options={{
-            headerTitle: 'Users',
+        <Stack.Screen name={routes.home} component={Home} options={{
+            headerTitle: 'Choose Color Palette',
             // header: () => null,
             headerStyle: {
                 backgroundColor: 'gray',
@@ -20,8 +20,10 @@ export default function Root() {
             },
             headerTitleAlign: 'center',
         }} />
-        <Stack.Screen name={routes.userDetails} component={UserDetails}
+        <Stack.Screen name={routes.palette} component={Palette}
             options={{
+                // headerTitle: 'Palette',
+                // header: () => null,
                 headerStyle: {
                     backgroundColor: 'gray',
                 },
